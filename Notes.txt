@@ -14,3 +14,7 @@ Float 32-bits
 Double 64-bits
 These are known as primitive data types
 Constants should be all uppercase
+
+Syntax errors - errors with the syntax of the language
+- Runtime errors
+- Logic Error
