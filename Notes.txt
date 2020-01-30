@@ -1,12 +1,12 @@
 CMPT 220l Notes
 1/29/20
 Java – write once, run anywhere
-C  Machine language
+C - Machine language
 
 Java – JVM – OS – Hardware
 -	Simple, object-oriented, distributed, interpreted, robust, secure, portable, efficient
 -	Javac compiles to Java byte-code
-Byte  8 bits
+Byte - 8 bits
 Short 16-bits
 Int 32-bits
 Long 64-bits
@@ -18,3 +18,10 @@ Constants should be all uppercase
 Syntax errors - errors with the syntax of the language
 - Runtime errors
 - Logic Error
++ - * / %
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
