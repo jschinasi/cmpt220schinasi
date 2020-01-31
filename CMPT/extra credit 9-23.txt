@@ -1,0 +1,15 @@
+f discRoot < 0:
+        number_of_roots = 2
+        root1 = (-b + discRoot) / (2 * a)
+        root2 = (-b - discRoot) / (2 * a)
+        print("The solutions are:" (root1, root2)
+
+    elif diskRoot == 0:
+        number_of_roots = 1
+        discRoot = (-b) / 2 * a
+        print("There is one root: ", (root1))
+
+    else:
+        number_of_roots = 0
+        print("There are no roots, the discriminant is less than 0")
+    exit()
