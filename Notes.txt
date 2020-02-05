@@ -1,4 +1,4 @@
-CMPT 220l Notes
+CMPT 220L Notes
 1/29/20
 Java – write once, run anywhere
 C - Machine language
@@ -25,3 +25,6 @@ Syntax errors - errors with the syntax of the language
 
 
 ----------------------------------------------------------------------------------------------------------------
+2/5/2020
+
+Operators - + , - , * , / , %
