@@ -6,7 +6,7 @@ public class Problem2 {
         double piB;
         
 
-        piA = 4 * (1.0-0.3+0.2-0.14+0.11-0.09);
+        piA = 4 * (1.0-0.3+0.2-0.14+0.11-0.09); // JA: You should let the computer do the calculations
         piB = 4 * (1.0-0.3+0.2-0.14+0.11-0.09+0.07);
 
         System.out.println(piA);
