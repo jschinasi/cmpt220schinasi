@@ -1,7 +1,7 @@
 // Jake Schinasi Lab2 problem3
 import java.util.Scanner;
 
-public class problem3 {
+public class Lab2problem3 {
     public static void main(String[] args) {
         // Create scanner to get input
         Scanner input = new Scanner(System.in);
