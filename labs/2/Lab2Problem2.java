@@ -1,7 +1,7 @@
 // Jake Schinasi Lab 2 problem 2
 import java.util.Scanner;
 
-public class problem2 {
+public class Lab2problem2 {
     public static void main( final String args[])  {
          
         // Create Scanner to get input 
