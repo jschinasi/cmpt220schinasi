@@ -1,4 +1,4 @@
-// Jake Schinasi Lab2 problem3
+// Jake Schinasi Lab2 Problem3
 import java.util.Scanner;
 
 public class Lab2problem3 {
