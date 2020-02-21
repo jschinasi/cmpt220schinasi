@@ -13,7 +13,6 @@ public class Lab3Problem1 {
         int sum = 0;
         int even = 0;
         double average = 0;
-
         int[] intArray = new int [50]; // Declares size of array
         int num = input.nextInt();
         int count = 0;
