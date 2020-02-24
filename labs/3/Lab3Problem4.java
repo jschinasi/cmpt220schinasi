@@ -5,9 +5,9 @@
 public class Lab3Problem4 {
 
     public static void main(String[] args) {
-        int topPrime = 150000; // largest number n can be
+/*         int topPrime = 15000; // largest number n can be
         int count = 0; // counts n
-        int current = 2; // current position
+        int current = 15000; // current position
         int lastPrime = 2; // lowest prime number 
 
         while (count < topPrime) {
@@ -28,19 +28,22 @@ public class Lab3Problem4 {
                 lastPrime = current; 
             }
             if (current == 2) {
-             current++;
+             current--;
             } else {
-                current = current + 2;
+                current = current - 1;
             }
-        }
+        } */
+        int lastPrime = 15000;
+
+        while(!isPrime(--lastPrime));
 
         System.out.println("largest n prime = " + lastPrime); // prints the output
-    
+    }
 
-
-
-
-
-
+    public static boolean isPrime(int n) {
+        for(int i = 2; i < n; i++) 
+            if (n % i == 0)
+                return false;
+        return true;
     }
 }
