@@ -45,8 +45,8 @@ public class Lab5Problem6 {
 		double count = 0;
 		double avg = 0;
 		
-		for (int i = 0; i < array.length; i++) {
-			total = total + array[i][row];
+		for (int i = 0; i < array[row].length; i++) {
+			total = total + array[row][i];
 			count++;
 		}
 		
