@@ -43,7 +43,7 @@ public class Circle {
 	public boolean contains(Circle circle) {
 		return Math.sqrt(Math.pow(circle.getX() - x, 2) + 
 				 Math.pow(circle.getY() - y, 2)) 
-				 <= Math.abs(radius - circle.getRadius());
+				 <= radius - circle.getRadius();
 	}
 	// another boolean overlaps(Circle circle) that returns true if circle overlaps with this circle
 	public boolean overlaps(Circle circle) {
