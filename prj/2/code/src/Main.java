@@ -1,4 +1,5 @@
-
+// Jake Schinasi Project 2
+// 5/11/20
 import java.util.Scanner;
 public class Main {
   public static void main(String args[]){
@@ -10,50 +11,38 @@ public class Main {
     int servicePoints = 0;
     int iSportsPoints = 0;
 
-    //starting here the user will input their
-    // information.
-
+   
     System.out.print("Welcome to the Housing Calculator");
     System.out.print("Please answer the following");
     System.out.println(" series of questions :");
 
-    // here the user will input their GPA
-    // and see how many priority points
-    // it translates too.
-
-    System.out.print("***NOTE*** the scale is from 0.0");
-    System.out.print(" to 4.0");
-    System.out.println(" [example: 3.25]");
+    // User input for GPA
+  
+    System.out.print("The scale is from 0.0");
+    System.out.print(" to 4.0. ");
     System.out.println("Please enter your current GPA: ");
+    
 
-    // here is where the user's GPA
-    // translates to points
+    // User's input for GPA is calculated into points
 
-    answer answer= new answer();
+    PriorityPoints prioritypoints= new PriorityPoints();
     double GPA = input.nextDouble();
-    answer.gpa(GPA);
+    prioritypoints.gpa(GPA);
 
-    // here the user will input their club
-    // information and see how many priority
-    // points it translates too.
+    // User inputs data about club involvement
 
-    System.out.print("Please enter the amount of clubs");
-    System.out.print(" you are involved in: [example: '0");
-    System.out.println("' to '10']");
+    System.out.print("Please enter the number of clubs");
+    System.out.print(" you are involved in");
+   
 
-    // here is where the the user's input
-    // gets determined whether or not the
-    // next series of questions are asked
-    // based on their input
+    // Club points are calculated based on user input
 
     double clubs = input.nextDouble();
-    clubs club = new clubs();
-    club.clubs(clubs);
+    Clubs club = new Clubs();
+    club.Clubs(clubs);
 
-      // if the user's input was greater than 0
-      // then their input will be calculated here
-      // and translated into priority points
-
+      // points are calculated when input > 0
+     
       String ans = input.next();
       if (ans.equals("yes")){
         System.out.println(clubs * 2 +" points");
@@ -64,14 +53,13 @@ public class Main {
         clubPoints += clubs * 1;
       }
 
-      // here the user will input their 
-      // and see how many priority points
-      // it translates too.
+      // User input for club status
 
       System.out.println("Please enter 'yes' or 'no' to the "
           + "following question");
       System.out.println("Were you the President/Vice "
           + "President/Secretary or Treasurer?: ");
+      
       String PosAnswer = input.next();
       if (PosAnswer.equals("yes")){
         System.out.println(3 +" points");
@@ -82,70 +70,58 @@ public class Main {
         clubPoints += 0;
       }
     
-    // here the user will answer whether or
-    // not they are in a sport. Based on their
-    // answer it will determine whether or not
-    // the next series of questions are executed.
+    // User input based on involvement in D1 sports
 
     System.out.println("Please enter 'yes' or 'no' to the "
         + "following question");
-    System.out.println("Are you involved in Marist College's"
-        + " Athletics?: ");
+    System.out.println("Are you part of a D1"
+        + " team at Marist?: ");
 
-    // here is where the users input will be
-    // calculated and translated into priority
-    // points
+    // User input is calculated into points
 
     String SportsAnswer = input.next();
+    
     if (SportsAnswer.equals("yes")){
       System.out.println("How many sports?");
       double sports = input.nextDouble();
       System.out.println(sports * 2 +" points");
       sportsPoints += sports * 2;
     }
-    else{
+    else {
       System.out.println(0 +" points");
       sportsPoints += 0;
     }
 
-    // here the user will answer whether or
-    // not they are in an intramural. Based on their
-    // answer it will determine whether or not
-    // the next series of questions are executed.
-
+    // User is asked to input data about Intramural involvement
+    
     System.out.println("Please enter 'yes' or 'no' to "
         + "the following question");
     System.out.println("Are you involved in Marist "
         + "College's Intramurals?: ");
 
-    // here is where the users input will be
-    // calculated and translated into priority
-    // points
+    // User input is calculated to points
 
     String iSportsAnswer = input.next();
+    
     if (iSportsAnswer.equals("yes")){
       System.out.println("How many sports?");
       double isports = input.nextDouble();
       System.out.println(isports * 2 +" points");
       iSportsPoints += isports * 2;
     }
-    else{
+    else {
       System.out.println(0 +" points");
       iSportsPoints += 0;
     }
 
-    // here the user will answer whether or
-    // not they were involved with Marist's 
-    // disciplinary punishments. 
+    // User is asked about disciplinary history 
 
     System.out.println("Please enter 'yes' or 'no'"
         + " to the following question");
     System.out.println("Do you have a Discipline History"
         + " with Marist College this semster?");
 
-    // here is where the users input will be
-    // calculated and translated into priority
-    // points
+    // User input is calculated into points
 
     String historyAnswer = input.next();
     if (historyAnswer.equals("yes")){
@@ -157,17 +133,14 @@ public class Main {
       historyPoints += 6;
     }
 
-    // here the user will input their answer
-    // to how their room condition is.
+    // User is asked about their room condition 
 
     System.out.println("Please enter 'good' or 'bad' "
         + "to the following question");
     System.out.println("In what condition was your"
         + " room?");
 
-    // here is where the users input will be
-    // calculated and translated into priority
-    // points
+    // User input is calculated into points
 
     String roomAnswer = input.next();
     if (roomAnswer.equals("good")){
@@ -179,20 +152,14 @@ public class Main {
       roomPoints += 0;
     }
 
-    // here the user will input whether or
-    // not they participated in community
-    // service and based on their answer 
-    // another series of questions will be
-    // executed
+    // User is asked about community service involvement
 
     System.out.println("Please enter 'yes' or 'no'"
         + " to the following question");
     System.out.println("Did you participate in any"
         + " Service activities?");
 
-    // here is where the users input will be
-    // calculated and translated into priority
-    // points based on their input
+    // User input is calculated into points
 
     String serviceAnswer = input.next();
     if (serviceAnswer.equals("yes")){
@@ -206,33 +173,32 @@ public class Main {
       servicePoints += 0;
     }
 
-    // here is where all those questions points
-    // will be calculated to find the result
+    // Total amount of priority points is calculated
     
 
-    double totalAverage = (answer.priorityPoints + clubPoints 
+    double totalAverage = (prioritypoints.priorityPoints + clubPoints 
         +sportsPoints + historyPoints+roomPoints
         +servicePoints+ iSportsPoints); 
 
-    // here is where the result will be shown
+    // Output is printed to user
 
     System.out.println("Your total priority points is:"
         + " " + totalAverage);
 
-    // here is where based on the users input
-    // will determine what their housing options are
+    // User inputs their grade
 
-    System.out.println("Please enter your classificaition:"
-        + " [example: 'Sophmore']");
+    System.out.println("Please enter your incoming grade "
+        + " such as Sophmore");
 
-    // this is where the housing options will be printed
-    // and executed based on the input
-    HousingChoices HousingChoices= new HousingChoices();
+    // Housing options are printed based off of user input
+    HousingChoices HousingChoice= new HousingChoices();
     String ClassAnswer = input.next();
-    HousingChoices.ClassAnswer(ClassAnswer);
+    HousingChoice.ClassAnswer(ClassAnswer);
     
-    //String AvgAverage = input.next();
-    //HousingChoice.AvgAnswer(AvgAverage);
+    // User is asked if they want to calculate their average
+    String AvgAnswer = input.next();
+    // Average is printed to user, and program finishes
+    HousingChoice.AvgAnswer(AvgAnswer);
     
   }
 }

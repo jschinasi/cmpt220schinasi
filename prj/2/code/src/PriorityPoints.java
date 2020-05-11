@@ -1,16 +1,17 @@
-
+// Jake Schinasi Project 2
+// 5/11/2020
 
 import java.util.Scanner;
 
-// was named answer
+
 public class PriorityPoints {
         int priorityPoints = 0;
 
     public void gpa(double GPA)
     {
 
-    if (GPA >= 4.0) {
-      System.out.println("invalid");
+    if (GPA > 4.0) {
+      System.out.println("invalid, please try again");
     }
     else if (GPA >= 3.85) {
       System.out.println(12 +" points");
@@ -53,7 +54,7 @@ public class PriorityPoints {
       priorityPoints += 0;
     }
     else {
-      System.out.println("invalid");
+      System.out.println("invalid, please try again");
     }
     }
 }
